@@ -5,18 +5,18 @@ namespace SistemaContable.Servicios
 {
     public class Cuentas_Memori
     {
-        
-        public List<Cuenta> Cuentas { get; } = new List<Cuenta>();
-        public List<Asientos> Asientos { get; } = new List<Asientos>();
+
+        public List<Cuenta> Cuentas { get; } = new List<Cuenta>(); // Lista de cuentas en memoria
+        public List<Asientos> Asientos { get; } = new List<Asientos>();// Lista de asientos en memoria
 
 
         public Cuentas_Memori()
         {
-            SeedCuentas();
+            SeedCuentas();// Llenar la lista de cuentas al inicializar
         }
 
 
-        private void SeedCuentas()
+        private void SeedCuentas()// Método para llenar la lista de cuentas
         {
             // ACTIVOS CORRIENTES
             Cuentas.Add(new Cuenta { Codigo = "1100", Nombre = "Caja", TipoId = 1 });
@@ -73,7 +73,7 @@ namespace SistemaContable.Servicios
 
             // GASTOS NO OPERATIVOS
             Cuentas.Add(new Cuenta { Codigo = "5200", Nombre = "Gastos Financieros", TipoId = 5 });
-            Cuentas.Add(new Cuenta { Codigo = "5210", Nombre = "Pérdidas Cambiarias", TipoId = 5});
+            Cuentas.Add(new Cuenta { Codigo = "5210", Nombre = "Pérdidas Cambiarias", TipoId = 5 });
             Cuentas.Add(new Cuenta { Codigo = "5220", Nombre = "Intereses por Pagar", TipoId = 5 });
         }
     }
