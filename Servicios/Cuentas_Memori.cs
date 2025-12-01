@@ -8,7 +8,7 @@ namespace SistemaContable.Servicios
 
         public List<Cuenta> Cuentas { get; } = new List<Cuenta>(); // Lista de cuentas en memoria
         public List<Asientos> Asientos { get; } = new List<Asientos>();// Lista de asientos en memoria
-
+        public static Cuentas_Memori Instancia { get; internal set; }
 
         public Cuentas_Memori()
         {

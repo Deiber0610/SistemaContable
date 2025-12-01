@@ -29,7 +29,6 @@ namespace SistemaContable.Models
 
         public bool IsBalanced => TotalDebe == TotalHaber;// Verificar si el asiento está balanceado
 
-
-
+        public IEnumerable<object> Detalle { get; internal set; }
     }
 }
