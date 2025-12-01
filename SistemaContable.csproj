@@ -199,6 +199,9 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Views\BalanceGeneral.aspx" />
+    <Content Include="Views\Balanza.aspx" />
+    <Content Include="Views\EstadoResultados.aspx" />
     <Content Include="Views\Mayor.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -240,6 +243,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Servicios\Cuentas_Memori.cs" />
     <Compile Include="Servicios\ServicioMayor.cs" />
+    <Compile Include="Servicios\ServicioReportes.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -260,6 +264,27 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BalanceGeneral.aspx.cs">
+      <DependentUpon>BalanceGeneral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\BalanceGeneral.aspx.designer.cs">
+      <DependentUpon>BalanceGeneral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Balanza.aspx.cs">
+      <DependentUpon>Balanza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Balanza.aspx.designer.cs">
+      <DependentUpon>Balanza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EstadoResultados.aspx.cs">
+      <DependentUpon>EstadoResultados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\EstadoResultados.aspx.designer.cs">
+      <DependentUpon>EstadoResultados.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Mayor.aspx.cs">
       <DependentUpon>Mayor.aspx</DependentUpon>
